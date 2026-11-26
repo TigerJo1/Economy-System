@@ -1,0 +1,23 @@
+# Plugin-Metadaten für Paper / Bukkit
+name: EconomySystem
+# Wird beim Build automatisch durch die Projektversion aus der Build-Konfiguration ersetzt
+version: '${version}'
+# Einstiegspunkt des Plugins (Hauptklasse)
+main: de.tigerjo.economySystem.EconomySystem
+# Unterstützte Minecraft-API-Hauptversion (kompatibel mit 1.21.x)
+api-version: '1.21'
+# Lädt das Plugin auch ohne Vault, aktiviert aber die Vault-Bridge, sobald Vault vorhanden ist
+softdepend: [Vault]
+
+# Registrierte Commands des Plugins
+commands:
+  money:
+    description: Verwalte dein Guthaben oder das von anderen Spielern
+    usage: /money [Spieler|top] | /money <pay|add|remove|set> <Spieler> <Betrag>
+    aliases: [bal, balance]
+
+# Berechtigungen für administrative Aktionen
+permissions:
+  economy.admin:
+    description: Erlaubt das Hinzufügen, Entfernen und Setzen von Geld
+    default: op

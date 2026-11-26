@@ -1,0 +1,9 @@
+# ==============================================================================
+# EconomySystem Konfiguration
+# ==============================================================================
+# Kontostände und Transaktionen werden automatisch in der lokalen SQLite-Datenbank
+# (economy.db) sowie in transactions.log im Plugin-Ordner gespeichert.
+#
+# Hinweis: Aktuell sind alle Kernwerte (z. B. Währungssymbol '$' und das
+# Bestätigungslimit von 10.000 für /money confirm) fest im Code hinterlegt.
+# Diese Datei dient als Basis für zukünftige konfigurierbare Optionen.
